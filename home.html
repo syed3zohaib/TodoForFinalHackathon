@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do App</title>
+        <!-- my links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+        <!-- firebase scripts -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+        <!-- firebase scripts -->
+        <!-- my links -->
+    </head>
+    <body>
+        <div class="logout-btn">
+            <button id="susub" onclick="logout()">Logout</button>
+        </div>
+        <div id="parent">
+            <div class="box">
+                <div class="title">
+                    <h3>To-Do List</h3>
+                </div>
+                <div class="input-sec">
+                    <div class="input-box">
+                        <input
+                            type="text"
+                            id="task"
+                            maxlength="92"
+                            placeholder="Add Task"
+                        >
+                    </div>
+                    <div class="btn-group">
+                        <button onclick="addTask()">Add</button>
+                        <button onclick="clearTasks()">Clear</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="tasks" id="taskBox"></div>
+            </div>
+        </div>
+        <!-- my scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./scripts/script.js"></script>
+        <!-- my scripts -->
+    </body>
+</html>
